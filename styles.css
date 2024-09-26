@@ -13,15 +13,12 @@ h2,
 h3,
 h4 {
     color: #2c3e50;
-    /* Color oscuro para los encabezados */
 }
 
 /* Header */
 header {
     background-color: #ffffff;
-    /* Fondo blanco para el header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .nav-container {
@@ -44,13 +41,11 @@ header {
 .menu-items a {
     text-decoration: none;
     color: #2980b9;
-    /* Color azul para los enlaces */
     transition: color 0.3s;
 }
 
 .menu-items a:hover {
     color: #3498db;
-    /* Color azul más claro en hover */
 }
 
 /* Banner */
@@ -62,11 +57,8 @@ header {
 .banner-container img {
     width: 100%;
     height: auto;
-    /* Mantiene la relación de aspecto */
     max-height: 300px;
-    /* Altura máxima */
     object-fit: cover;
-    /* Ajusta la imagen sin distorsionar */
 }
 
 /* Secciones */
@@ -82,53 +74,38 @@ header {
 
 .cta-caja img {
     width: 50%;
-    /* Ajusta la imagen a la mitad del contenedor */
     max-width: 300px;
-    /* Máximo tamaño para la imagen */
     height: auto;
-    /* Mantiene la relación de aspecto */
     border-radius: 5px;
-    /* Bordes redondeados */
     margin-right: 20px;
 }
 
 .cta-contenido {
     flex: 1;
-    /* Toma el espacio restante */
 }
 
 /* Carrusel de productos */
 .product-carousel {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que los elementos se envuelvan */
     justify-content: space-between;
     margin: 20px 0;
 }
 
 .product-item {
     flex: 1 1 calc(30% - 20px);
-    /* Flexbox para responsive */
     margin: 10px;
     background-color: #ffffff;
-    /* Fondo blanco para los productos */
     border: 1px solid #dddddd;
-    /* Borde sutil */
     border-radius: 5px;
-    /* Bordes redondeados */
     overflow: hidden;
-    /* Oculta desbordes */
     text-align: center;
-    /* Centra el contenido */
 }
 
 .product-item img {
     width: 100%;
-    /* Ajusta la imagen al contenedor */
     height: auto;
-    /* Mantiene la relación de aspecto */
     object-fit: cover;
-    /* Ajusta la imagen sin distorsionar */
 }
 
 .product-info {
@@ -137,7 +114,6 @@ header {
 
 .compare-button {
     background-color: #2980b9;
-    /* Botón azul */
     color: white;
     border: none;
     padding: 10px 15px;
@@ -148,7 +124,6 @@ header {
 
 .compare-button:hover {
     background-color: #3498db;
-    /* Color más claro en hover */
 }
 
 /* Footer */
@@ -156,7 +131,6 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #2c3e50;
-    /* Fondo oscuro para el footer */
     color: white;
 }
 
@@ -188,9 +162,7 @@ h1 {
     background-color: #ccc;
     margin: 20px 0;
     display: flex;
-    /* Use flexbox for centering */
     justify-content: center;
-    /* Center the button horizontally */
 }
 
 .arrow-button {
@@ -223,7 +195,6 @@ h1 {
 
 .nosotros-content>div {
     flex: 1 1 300px;
-    /* Adjust width as needed */
     margin-bottom: 30px;
 }
 
