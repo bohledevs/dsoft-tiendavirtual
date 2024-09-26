@@ -193,7 +193,7 @@ h1 {
     justify-content: space-between;
 }
 
-.nosotros-content>div {
+.nosotros-content > div {
     flex: 1 1 300px;
     margin-bottom: 30px;
 }
@@ -217,3 +217,20 @@ p img {
     width: 20px;
     height: 20px;
 }
+
+blockquote {
+    background-color: #f2f2f2;
+    border-left: 3px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  
+  cite {
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+  }
