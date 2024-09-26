@@ -1,6 +1,6 @@
 /* Estilo General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,14 +8,17 @@ body {
     background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4 {
-    color: #2c3e50; /* Color oscuro para los encabezados */
+h1,
+h2,
+h3,
+h4 {
+    color: #2c3e50;
 }
 
 /* Header */
 header {
-    background-color: #ffffff; /* Fondo blanco para el header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .nav-container {
@@ -37,12 +40,11 @@ header {
 
 .menu-items a {
     text-decoration: none;
-    color: #2980b9; /* Color azul para los enlaces */
-    transition: color 0.3s;
+    color: #2980b9;
 }
 
 .menu-items a:hover {
-    color: #3498db; /* Color azul más claro en hover */
+    color: #3498db;
 }
 
 /* Banner */
@@ -53,9 +55,8 @@ header {
 
 .banner-container img {
     width: 100%;
-    height: auto; /* Mantiene la relación de aspecto */
-    max-height: 300px; /* Altura máxima */
-    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    height: auto;
+    max-height: 300px;
 }
 
 /* Secciones */
@@ -70,39 +71,37 @@ header {
 }
 
 .cta-caja img {
-    width: 50%; /* Ajusta la imagen a la mitad del contenedor */
-    max-width: 300px; /* Máximo tamaño para la imagen */
-    height: auto; /* Mantiene la relación de aspecto */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
     margin-right: 20px;
 }
 
 .cta-contenido {
-    flex: 1; /* Toma el espacio restante */
+    flex: 1;
 }
 
 /* Carrusel de productos */
 .product-carousel {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     justify-content: space-between;
     margin: 20px 0;
 }
 
 .product-item {
-    flex: 1 1 calc(30% - 20px); /* Flexbox para responsive */
+    flex: 1 1 calc(30% - 20px);
     margin: 10px;
-    background-color: #ffffff; /* Fondo blanco para los productos */
-    border: 1px solid #dddddd; /* Borde sutil */
-    border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta desbordes */
-    text-align: center; /* Centra el contenido */
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .product-item img {
-    width: 100%; /* Ajusta la imagen al contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    width: 100%;
+    height: auto;
 }
 
 .product-info {
@@ -110,27 +109,105 @@ header {
 }
 
 .compare-button {
-    background-color: #2980b9; /* Botón azul */
+    background-color: #2980b9;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .compare-button:hover {
-    background-color: #3498db; /* Color más claro en hover */
+    background-color: #3498db;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2c3e50; /* Fondo oscuro para el footer */
+    background-color: #2c3e50;
     color: white;
 }
 
 footer p {
     margin: 5px 0;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.catalog-img {
+    border: 5px solid gray;
+}
+
+.separator {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.arrow {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.nosotros-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotros-content>div {
+    flex: 1 1 300px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
+    position: relative;
+}
+
+p img {
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
 }
