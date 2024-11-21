@@ -1,4 +1,4 @@
-// Array para almacenar los productos del carrito
+
 const cart = [];
 
 // Función para agregar producto al carrito
@@ -25,7 +25,7 @@ function updateCart() {
     const cartTotal = document.getElementById('cart-total');
     const cartCount = document.getElementById('cart-count');
 
-    cartContainer.innerHTML = ''; // Limpiar el contenido actual
+    cartContainer.innerHTML = ''; 
 
     let total = 0;
     let totalItems = 0;
@@ -34,7 +34,6 @@ function updateCart() {
         total += item.price * item.quantity;
         totalItems += item.quantity;
 
-        // Crear un contenedor para el producto
         const productElement = document.createElement('div');
         productElement.className = 'cart-item';
         productElement.innerHTML = `
@@ -48,7 +47,7 @@ function updateCart() {
     cartTotal.textContent = `Total: $${total.toFixed(2)}`;
     cartCount.textContent = `(${totalItems})`;
 
-    // Eventos para incrementar y disminuir cantidad
+    //  sumar y restar cantidad de items
     const increaseButtons = document.querySelectorAll('.increase-button');
     const decreaseButtons = document.querySelectorAll('.decrease-button');
 
@@ -78,7 +77,7 @@ function updateCart() {
 // Función para vaciar el carrito
 function clearCart() {
     if (confirm('¿Estás seguro de que deseas vaciar el carrito?')) {
-        cart.length = 0; // Vaciar el array
+        cart.length = 0; 
         updateCart();
     }
 }
