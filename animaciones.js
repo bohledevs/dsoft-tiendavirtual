@@ -1,5 +1,5 @@
 window.onload = () => {
-    // Script 1: Efecto de sombra y opacidad en el footer
+    // Efecto de sombra y opacidad en el footer
     const footer = document.querySelector('footer');
     footer.classList.add('shadow-effect', 'fade-effect');
 
@@ -8,7 +8,7 @@ window.onload = () => {
         footer.classList.add('shadow-effect');
     }, 2000);
 
-    // Script 2: Cambiar color de fondo de la barra de navegación al hacer scroll
+    // Cambiar color de fondo de la barra de navegación al hacer scroll
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('.nav-container');
         if (window.scrollY > 50) {
@@ -86,29 +86,27 @@ window.onload = () => {
         nav.classList.add('shadow-effect');
     }, 2000);
 
-    // Script 3: Animación de aparición de secciones
+    // Animación de aparición de secciones
     const sections = document.querySelectorAll('section');
 
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY + window.innerHeight;
+    
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionBottom = sectionTop + section.offsetHeight;
+    
+            if (scrollPosition > sectionTop && window.scrollY < sectionBottom) {
+                section.classList.add('visible');
             }
         });
-    }, observerOptions);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Ejecuta la función al cargar la página
+    
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-
-    // Script 4: Efecto de resaltado en testimonios
+    // Efecto de resaltado en testimonios
     const testimonios = document.querySelectorAll('.testimonio');
 
     if (testimonios.length === 0) {
@@ -126,7 +124,7 @@ window.onload = () => {
         });
     });
 
-    // Script 5: Efecto de resaltado en nosotros
+    // Efecto de resaltado en nosotros
     const nosotros = document.querySelectorAll('.nosotros');
 
     if (nosotros.length === 0) {
@@ -144,7 +142,7 @@ window.onload = () => {
         });
     });
 
-    // Script 6: Subrayado gris en h3
+    // Subrayado gris en h3
     const headings = document.querySelectorAll('h3');
 
     setInterval(() => {
@@ -159,15 +157,15 @@ window.onload = () => {
     whatsappButton.id = 'whatsapp-button';
 
     const whatsappLink = document.createElement('a');
-    whatsappLink.href = 'https://wa.me/1234567890'; // Reemplaza con tu número en formato internacional
+    whatsappLink.href = 'https://wa.me/1234567890';
     whatsappLink.target = '_blank';
 
     const whatsappImage = document.createElement('img');
-    whatsappImage.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'; // Ícono de WhatsApp
+    whatsappImage.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'; 
     whatsappImage.alt = 'WhatsApp';
-    whatsappImage.style.width = '50px'; // Tamaño pequeño
-    whatsappImage.style.height = '50px'; // Tamaño pequeño
-    whatsappImage.style.borderRadius = '50%'; // Ícono redondeado
+    whatsappImage.style.width = '50px'; 
+    whatsappImage.style.height = '50px';
+    whatsappImage.style.borderRadius = '50%'; 
 
     whatsappLink.appendChild(whatsappImage);
     whatsappButton.appendChild(whatsappLink);
