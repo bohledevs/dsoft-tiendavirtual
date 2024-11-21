@@ -35,6 +35,11 @@
                 <li>
                     <a href="#Mas" role="menuitem">+</a>
                 </li>
+                <li>
+                    <a href="#cart" id="cart-link" role="menuitem">
+                        🛒Carrito<span id="cart-count">(0)</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -47,10 +52,10 @@
             </div>
         </section>
 
-        <div class="separator">
-            <button class="arrow-button">
-                <span class="arrow"></span>
-            </button>
+        <div class="construccion">
+            <a href="#testimonios" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
         </div>
 
         <section id="construccion" class="container">
@@ -72,16 +77,15 @@
                         necesitas para completar tu proyecto con éxito.</p>
                 </div>
             </div>
-
-            <h3 class="text-center">Artículos Destacados</h3>
-            <div class="product-carousel">               
+            <div class="product-carousel">
+                <h3>Artículos Destacados</h3>
                 <div class="product-item">
 
                     <img src=".\images\productos\Cemento.jpg" alt="Bolsa de cemento x 50kg" />
                     <div class="product-info">
                         <h4>Bolsa de cemento x 50kg</h4>
                         <p>Precio: $10.200</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -89,7 +93,7 @@
                     <div class="product-info">
                         <h4>Hormigonera 150lts</h4>
                         <p>Precio: $550.500</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <!-- ACA SE AGREGAN MAS PRODUCTOS EN CASO DE QUERER -->
@@ -97,9 +101,9 @@
         </section>
 
         <div class="separator">
-            <button class="arrow-button">
-                <span class="arrow"></span>
-            </button>
+            <a href="#hogar" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
         </div>
 
         <section id="hogar" class="container">
@@ -119,14 +123,14 @@
                     <p>Transforma tu hogar en un lugar acogedor y elegante con nuestros productos de alta calidad.</p>
                 </div>
             </div>
-            <h3>Artículos Destacados</h3>
-            <div class="product-carousel">              
+            <div class="product-carousel">
+                <h3>Artículos Destacados</h3>
                 <div class="product-item">
                     <img src="./images\productos\lampara-colgante.jpg" alt="Lamara colgante 3 globos" />
                     <div class="product-info">
                         <h4>Lamara colgante 3 globos</h4>
                         <p>Precio: $14.999</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -134,17 +138,32 @@
                     <div class="product-info">
                         <h4>Escritorio 120cm x 90cm</h4>
                         <p>Precio: $18.000</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <!-- ACA SE AGREGAN MAS PRODUCTOS EN CASO DE QUERER -->
             </div>
         </section>
 
+
         <div class="separator">
-            <button class="arrow-button">
-                <span class="arrow"></span>
-            </button>
+            <a href="#Carrito" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
+        </div>
+
+        <section id="cart" class="container">
+            <h2 class="text-center">Carrito de Compras</h2>
+            <div id="cart-container"></div>
+            <h3 id="cart-total">Total: $0.00</h3>
+            <button id="clear-cart-button" class="clear-button">Limpiar Carrito</button>
+        </section>
+
+
+        <div class="separator">
+            <a href="#Nosotros" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
         </div>
 
         <section id="Nosotros" class="container">
@@ -197,45 +216,57 @@
         </section>
 
         <div class="separator">
-            <button class="arrow-button">
-                 <span class="arrow"></span>
-             </button>
+            <a href="#testimonios" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
         </div>
 
-        <section id="Mas" class="container">
-            <section id="testimonios" class="container">
-                <h2 class="text-center">Testimonios de Clientes</h2>
-                <div class="testimonios-content">
-                    <div class="testimonio">
-                        <p>"Excelente servicio y productos de alta calidad, me atendieron muy bien los chicos de la
-                            tienda
-                            cuando llame con consutas."</p>
-                        <p><strong>— Juan Ramirez</strong></p>
-                    </div>
-                    <div class="testimonio">
-                        <p>"Todo genial, me dio soporte Facundo con algunas dudas y pude comprar sin problemas."</p>
-                        <p><strong>— Andres </strong></p>
-                    </div>
-                    <div class="testimonio">
-                        <p>"Gran variedad de productos y envio rapidisimo."</p>
-                        <p><strong>— Bruno Gonzalez</strong></p>
-                    </div>
-                    <div class="testimonio">
-                        <p>"Nunca falla, siempre encuentro lo que busco y a un precio mas accesible que otras
-                            tiendas."</p>
-                        <p><strong>— Tomas Cabral</strong></p>
-                    </div>
-                </div>
-                <h2 class="text-center">Contáctanos</h2>
-                <p>Si tienes alguna consulta o necesitas asesoramiento sobre nuestros productos,
-                    no dudes en ponerte en contacto con nosotros. Nuestro equipo de atención al cliente
-                    está disponible para ayudarte a encontrar lo que necesitas.</p>
-                <p>Teléfono: 123-456-789</p>
-                <p>sino envianos un correo haciendo click <a href="mailto:ivancao91@gmail.com">aca</a></p>
-                <!-- pongo mi mail de ejemplo -->
+        <section id="testimonios" class="container">
+            <h2 class="text-center">Testimonios de Clientes</h2>
+            <div class="testimonios-content">
+              <div class="testimonio">
+                <blockquote cite="Juan Ramirez">
+                  Excelente servicio y productos de alta calidad, me atendieron muy bien los chicos de la tienda cuando llame con consutas.
+                </blockquote>
+                <cite>Juan Ramirez</cite>
+              </div>
+              <div class="testimonio">
+                <blockquote cite="Andres">
+                  Todo genial, me dio soporte Facundo con algunas dudas y pude comprar sin problemas.
+                </blockquote>
+                <cite>Andres</cite>
+              </div>
+              <div class="testimonio">
+                <blockquote cite="Bruno Gonzalez">
+                  Gran variedad de productos y envio rapidisimo.
+                </blockquote>
+                <cite>Bruno Gonzalez</cite>
+              </div>
+              <div class="testimonio">
+                <blockquote cite="Tomas Cabral">
+                  Nunca falla, siempre encuentro lo que busco y a un precio mas accesible que otras tiendas.
+                </blockquote>
+                <cite>Tomas Cabral</cite>
+              </div>
+            </div>
+            <h2 class="text-center">Contáctanos</h2>
 
-            </section>
-    </main>
+
+            <ul class="contact-list">
+                <li>
+                  <p>Si tienes alguna consulta o necesitas asesoramiento sobre nuestros productos, no dudes en ponerte en contacto con nosotros. Nuestro equipo de atención al cliente<br> está disponible para ayudarte a encontrar lo que necesitas.</p>
+                </li>
+                <li>
+                  <p>Teléfono: 123-456-789</p>
+                </li>
+                <li>
+                  <p>Si no, envíanos un correo haciendo clic <a href="mailto:ivancao91@gmail.com">aquí</a></p>
+                </li>
+              </ul>
+
+          </section>
+
+        </main>
 
     <footer>
         <p>© Ivan Cao, Facundo Bohle | Diseño y Desarrollo Web | 2024 Tienda de Construcción. Todos los derechos
@@ -243,6 +274,9 @@
         <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y ofertas.</p>
     </footer>
 
+    <script src="script.js"></script>
+
+    
 </body>
 
 </html>
