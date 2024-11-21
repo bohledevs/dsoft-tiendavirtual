@@ -35,6 +35,11 @@
                 <li>
                     <a href="#Mas" role="menuitem">+</a>
                 </li>
+                <li>
+                    <a href="#cart" id="cart-link" role="menuitem">
+                        🛒Carrito<span id="cart-count">(0)</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -80,7 +85,7 @@
                     <div class="product-info">
                         <h4>Bolsa de cemento x 50kg</h4>
                         <p>Precio: $10.200</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -88,7 +93,7 @@
                     <div class="product-info">
                         <h4>Hormigonera 150lts</h4>
                         <p>Precio: $550.500</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <!-- ACA SE AGREGAN MAS PRODUCTOS EN CASO DE QUERER -->
@@ -125,7 +130,7 @@
                     <div class="product-info">
                         <h4>Lamara colgante 3 globos</h4>
                         <p>Precio: $14.999</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <div class="product-item">
@@ -133,12 +138,27 @@
                     <div class="product-info">
                         <h4>Escritorio 120cm x 90cm</h4>
                         <p>Precio: $18.000</p>
-                        <button class="compare-button">Comparar</button>
+                        <button class="buy-button">Comprar</button>
                     </div>
                 </div>
                 <!-- ACA SE AGREGAN MAS PRODUCTOS EN CASO DE QUERER -->
             </div>
         </section>
+
+
+        <div class="separator">
+            <a href="#Carrito" class="arrow-button">
+              <span class="arrow"></span>
+            </a>
+        </div>
+
+        <section id="cart" class="container">
+            <h2 class="text-center">Carrito de Compras</h2>
+            <div id="cart-container"></div>
+            <h3 id="cart-total">Total: $0.00</h3>
+            <button id="clear-cart-button" class="clear-button">Limpiar Carrito</button>
+        </section>
+
 
         <div class="separator">
             <a href="#Nosotros" class="arrow-button">
@@ -254,6 +274,9 @@
         <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y ofertas.</p>
     </footer>
 
+    <script src="script.js"></script>
+
+    
 </body>
 
 </html>
