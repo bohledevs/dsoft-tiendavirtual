@@ -154,31 +154,44 @@ window.onload = () => {
     }, 5000);
 
 
-    // efectos link de contacto
+    // Boton de Whatsapp
+    const whatsappButton = document.createElement('div');
+    whatsappButton.id = 'whatsapp-button';
 
-    const link = document.getElementById('aqui');
+    const whatsappLink = document.createElement('a');
+    whatsappLink.href = 'https://wa.me/1234567890'; // Reemplaza con tu número en formato internacional
+    whatsappLink.target = '_blank';
 
-    // Add a rainbow color effect
-    let hue = 0;
-    setInterval(() => {
-        link.style.color = `hsl(${hue}, 100%, 50%)`;
-        hue = (hue + 1) % 360;
-    }, 50);
+    const whatsappImage = document.createElement('img');
+    whatsappImage.src = 'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg'; // Ícono de WhatsApp
+    whatsappImage.alt = 'WhatsApp';
+    whatsappImage.style.width = '50px'; // Tamaño pequeño
+    whatsappImage.style.height = '50px'; // Tamaño pequeño
+    whatsappImage.style.borderRadius = '50%'; // Ícono redondeado
 
-    // Add a rotating effect
-    let angle = 0;
-    setInterval(() => {
-        link.style.transform = `rotate(${angle}deg)`;
-        angle = (angle + 2) % 360;
-    }, 20);
+    whatsappLink.appendChild(whatsappImage);
+    whatsappButton.appendChild(whatsappLink);
+    document.body.appendChild(whatsappButton);
 
-    // Add a shadow pulsing effect
-    setInterval(() => {
-        link.style.textShadow = `0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 0, 255, 0.5)`;
-        setTimeout(() => {
-            link.style.textShadow = 'none';
-        }, 500);
-    }, 1000);
+    // Crear el contenedor del botón de Facebook
+    const facebookButton = document.createElement('div');
+    facebookButton.id = 'facebook-button';
+
+    const facebookLink = document.createElement('a');
+    facebookLink.href = 'https://www.facebook.com/tuPerfil';
+    facebookLink.target = '_blank';
+
+    const facebookImage = document.createElement('img');
+    facebookImage.src = 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/streams/2013/December/131203/2D9840012-facebooklogo.jpg'; // Ícono de Facebook
+    facebookImage.alt = 'Facebook';
+    facebookImage.style.width = '50px'; 
+    facebookImage.style.height = '50px';
+    facebookImage.style.borderRadius = '50%'; 
+
+    facebookLink.appendChild(facebookImage);
+    facebookButton.appendChild(facebookLink);
+    document.body.appendChild(facebookButton);
+
 
 
     // Agregar estilos para las animaciones
