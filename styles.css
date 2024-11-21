@@ -84,44 +84,51 @@ header {
     flex: 1;
 }
 
-/* Carrusel de productos */
 .product-carousel {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .product-item {
-    flex: 1 1 calc(30% - 20px);
-    margin: 10px;
+    flex: 0 1 calc(33.333% - 30px); 
+    max-width: 300px; 
+    text-align: center; 
     background-color: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .product-item img {
     width: 100%;
+    max-width: 200px; 
     height: auto;
-    transition: transform 0.4s;
+    margin-bottom: 10px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
 
 .product-item img:hover {
-    transform: scale(1.05);
-    /* Agranda la imagen un 10% */
+    transform: scale(1.1);
 }
 
 .product-info {
-    padding: 10px;
+    font-size: 1rem; 
+    line-height: 1.5;
 }
 
+
 .buy-button {
-    background-color: #2980b9;
-    color: white;
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    font-size: 1rem; 
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
     transition: all 0.4s;
 }
@@ -143,7 +150,6 @@ footer p {
     margin: 5px 0;
 }
 
-
 h1,
 h2,
 h3 {
@@ -155,6 +161,16 @@ h3 {
 h1 {
     font-size: 3rem;
     padding: 2rem 0;
+    text-align: center;
+}
+
+h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 2rem; 
+}
+
+h3  {
     text-align: center;
 }
 
@@ -305,9 +321,7 @@ cite {
     border-radius: 5px;
     padding: 10px;
     max-height: 300px;
-    /* Limitar el tamaño */
     overflow-y: auto;
-    /* Hacer scroll si hay muchos productos */
 }
 
 /* Total del carrito */
@@ -336,7 +350,7 @@ cite {
 
 .clear-button:hover {
     background-color: rgb(183, 42, 42);
-    scale: 1.05;
+    scale: 1.1;
 }
 
 /* Ajustar el ícono del carrito en el header */
@@ -362,7 +376,6 @@ cite {
 .decrease-button,
 .increase-button {
     background-color: #dddddd;
-    color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -374,6 +387,14 @@ cite {
 .increase-button:hover {
     background-color: #bdbdbd;
     transform: scale(1.1);
+}
+
+.increase-button {
+    color: rgb(0, 150, 73);
+}
+
+.decrease-button {
+    color: rgb(230, 14, 14);
 }
 
 a.enlace {
